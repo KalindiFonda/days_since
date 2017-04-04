@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1> Add new?</h1>
+<form method="post" action="/add_new">
+  <textarea name="new" type="text" value="{{activity}}" cols="100" required></textarea>
+  <br>
+  <input type="submit">
+</form>
+{% endblock %}

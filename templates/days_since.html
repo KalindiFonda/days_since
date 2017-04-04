@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+{% for activity in activities%}
+<div class="activity" style="background-color: {{activity.urgency}};"">
+  <p>
+ 	<span class="activity_name">{{activity.activity_name}}</span>
+ 	<span class="days_since">{{today - activity.dates_done[-1]}}</span>
+ 	<form method="post" action="/days_since?activity_key={{activity.key.id()}}" class="done_form"><input type="submit" value="done" class="done"></form>
+  </p>
+</div>
+{% endfor %}
+{% endblock %}

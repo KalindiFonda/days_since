@@ -1,0 +1,24 @@
+
+h1 {
+	margin-bottom: 0;
+}
+
+.activity {
+
+	/*todo make color gradient depending how far ago*/
+	border-radius: 10px;
+}
+
+.activity p {
+	padding: 10px;
+	width: 100%;
+}
+
+.done {
+	background-color: lightgreen;
+	padding: 5px;
+}
+
+.done_form {
+	/*todo make form inline*/
+}
